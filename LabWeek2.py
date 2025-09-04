@@ -6,9 +6,16 @@
 #print (product)
 
 
-num3 = input("Enter your firt number:")
-num4 = input("Enter your second number:")
+#num3 = input("Enter your firt number:")
+#num4 = input("Enter your second number:")
 
-qoutent = int(num3) / int(num4)
+#qoutent = int(num3) / int(num4)
 
-print (qoutent)
+#print (qoutent)
+
+num5 = input("Enter your firt number:")
+num6 = .5
+
+Sqr = float(num5) ** float(num6)
+
+print (Sqr)
