@@ -1,0 +1,8 @@
+print('104 S Carpenter St', end=' ')
+print('Kings Mountain', end=' ')
+print('North Carolina', end=' ')
+print('28086', end=' ')
+print('(704) 259-6044)', end=' ')
+print('United States', end=' ')
+print('35.239824', end=' ')
+print('-81.33881', end=' ')
