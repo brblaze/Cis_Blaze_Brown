@@ -7,5 +7,5 @@ while n < numberofgrades:
  n=n+1
  grades=int(input('enter this grade for this assiment '))
  print (f'{grades}')
- if n<= numberofgrades:
-  print ('You are done grading')
+ if n>= numberofgrades:
+  print (f'You have enter {numberofgrades} grades')

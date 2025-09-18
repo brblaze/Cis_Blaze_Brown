@@ -1,0 +1,4 @@
+iteration= input('What number do you want to loop to ')
+print (f'i will display the number {iteration} ')
+for num in [1, 2, 3, 4, 5, 6, 7, 8, 9, ]:
+    print(num)
