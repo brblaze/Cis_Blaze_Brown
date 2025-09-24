@@ -1,4 +1,4 @@
 def printMystring(): 
-    print ('hrllo world')
+    print ('hello world')
     print ('good bye world')
 printMystring()
