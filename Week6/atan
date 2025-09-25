@@ -1,0 +1,10 @@
+import math
+x=int(input('enter hight'))
+y=int(input('enter base'))
+
+function = math.atan2(x,y)
+theta = 180/ int(math.pi)
+
+def message():
+    print(f'the angle is {theta} degress')
+message()
