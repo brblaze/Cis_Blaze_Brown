@@ -1,2 +1,11 @@
-def word_fequency():
-    
+#def word_fequency():
+#   sentence=input("what sentence do you want to use ")
+sentence=input("what sentence do you want to use ") 
+def word_frequency(sentence):
+    words= sentence.split()
+    mydict = {
+        address:1
+        name:2
+        }
+    print(words)
+word_frequency(sentence)
