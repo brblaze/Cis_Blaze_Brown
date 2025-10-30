@@ -2,10 +2,15 @@
 #   sentence=input("what sentence do you want to use ")
 sentence=input("what sentence do you want to use ") 
 def word_frequency(sentence):
+    #splits the sentence 
     words= sentence.split()
-    mydict = {
-        address:1
-        name:2
-        }
-    print(words)
+    mydict={}
+    for word in words:
+        #main promblem was it was counting word in words instead of it counting in the dictinary 
+        if word in mydict:
+            mydict[word] += 1
+        else: 
+            mydict[word]=1
+            #end statement 
+        print(mydict)
 word_frequency(sentence)

@@ -1,0 +1,12 @@
+#dictionary of items 
+names_and_adresses={
+    "first_name" : "Blaze",
+    "lastname" : "Brown",  
+    "State" : "Calirforna", 
+    "City" : "beverly hills",
+    "Zip_Code" : "90201",
+    "Phonenuber": "5554449618",
+}
+def print_dictionary(names_and_adresses):
+    print(names_and_adresses)
+print_dictionary(names_and_adresses)

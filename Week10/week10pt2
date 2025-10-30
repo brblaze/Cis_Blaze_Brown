@@ -1,0 +1,16 @@
+student_grades={
+    #this has my keys and values for the dictionary however i was makinghte values into strings and not values causing some promblems
+    "Blaze": 89,
+    "Hope": 100,
+    "gregory": 72, 
+    "uriah": 33, 
+    "Roderick": 85,
+    "Thomas": 2,
+}
+def caulate_avereg_grades(student_grades):
+    #using the values fuction to pull the number values from the dictionary
+    student_grades.values()
+    #below is the math to get averages it adds all of the entry using the legth but it adds all of the values by using sum
+    average=sum(student_grades.values())/len(student_grades)
+    print(average)
+caulate_avereg_grades(student_grades)
