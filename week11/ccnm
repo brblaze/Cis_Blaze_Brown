@@ -1,16 +1,20 @@
 
 def validateCreditCard():
     ccNum=input('What is your credit Card#? ')
-    ccNum=ccNum[::-1]
-    digits = [int(ch) for ch in ccNum if ch.isdigit()]
-    for i, digits in enumerate(ccNum):
-     if i % 2 == 0:
-        N=digits*2
+    CCNUM=ccNum[::-1]
+    digits = [int(num) for num in CCNUM if num.isdigit()]
+    total=0
+    double = False
+    for num1 in (digits):
+     if double % 2 == 0:
+        N=num1*2
         n=int(N)
         if n>9:
-            n-9
+           n=n-9
+        total+= n
+        double= not double
        
-    total=N
+
     print (total)
 validateCreditCard()
 
