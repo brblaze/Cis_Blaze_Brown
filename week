@@ -1,3 +1,0 @@
-ccNum=input("what is your credit card num?")
-def validatecreditcard(ccNum):
-    
