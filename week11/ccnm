@@ -1,20 +1,31 @@
-
+#def ine function 
 def validateCreditCard():
     ccNum=input('What is your credit Card#? ')
+    #this revers the string to do go to the end 
     CCNUM=ccNum[::-1]
+    #this turns my credit number into values
     digits = [int(num) for num in CCNUM if num.isdigit()]
     total=0
-    double = False
-    for num1 in (digits):
-     if double % 2 == 0:
-        N=num1*2
-        n=int(N)
-        if n>9:
-           n=n-9
+    #for loop
+    for i, num1 in enumerate(digits):
+        #if statments to double the even numbers
+        if i % 2 == 1:
+            N=num1*2
+            n=int(N)
+            #if the numbers are to big they will be -9
+            if n>9:
+                n-=9
+                #this adds everything together 
+        else:
+            n=num1
         total+= n
-        double= not double
-       
+        #prints total
+    print(total)
+    #print stantment with if and else
+    if total %10==0:
+        print("credit =card number is valid")
+    else:
+        print("credit card number not valid")
 
-    print (total)
 validateCreditCard()
 
