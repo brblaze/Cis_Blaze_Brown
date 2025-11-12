@@ -12,6 +12,7 @@ print ('|4.   |  Ring Camera(wireless)             | $12.00')
 print ('|5.   |  Smart TV(TLC 70 inch)             | $12.00')
 #user defined fuction asking about what iems do you want
 Products=[
+    
     { 
      "product name":"USB Drive (128 GB)",
     "product ID":1,
@@ -60,3 +61,20 @@ print(Products)
 #def appended_shopping_cart():
     
     #input("what item do you want (use the item number)? ")
+    ## Create a list of dictionaries
+students = [
+    {"name": "Alice", "age": 20, "major": "Computer Science"},
+    {"name": "Bob", "age": 22, "major": "Engineering"},
+    {"name": "Charlie", "age": 21, "major": "Mathematics"}
+]
+
+# Accessing elements
+print(students[0])  # Output: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
+print(students[1]["name"])  # Output: Bob
+
+# Adding a new dictionary to the list
+students.append({"name": "David", "age": 19, "major": "Physics"})
+
+# Iterating through the list of dictionaries
+for student in students:
+    print(f"{student['name']} is {student['age']} years old and majors in {student['major']}.")
