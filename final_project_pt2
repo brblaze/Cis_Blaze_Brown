@@ -1,28 +1,13 @@
-#item catalog(i know i didnt nered the numbers but it look better since they are also id numbers)
-print('----------------------------------------------------')
-print('                 PRODUCT CATALOG')
-print('----------------------------------------------------')
-print (' Itme#  [           Item Name              ]  item ')
-print ('                                              price')
-print ('---------------------------------------------------')
-print ('|1.   |  USB Drive (128 GB)                | $12.00')
-print ('|2.   |  Mas Book Pro (15 Inch)            | $12.00')
-print ('|3.   |  Arduino1010(with blue tooth)      | $12.00')
-print ('|4.   |  Ring Camera(wireless)             | $12.00')
-print ('|5.   |  Smart TV(TLC 70 inch)             | $12.00')
-#user defined fuction asking about what iems do you want
-Products=[
-    
-    { 
+USB={
      "product name":"USB Drive (128 GB)",
-    "product ID":1,
-    "SKU": "usb_k981",
-    "price": 12.00,
-    "description": "usb 128 gb drive",
-    "qty on hand":1000,
+     "product ID":1,
+     "SKU": "usb_k981",
+     "price": 12.00,
+     "description": "usb 128 gb drive",
+     "qty on hand":1000,
     
-},
-{ 
+}
+MAC={ 
     "product name":"Mac_Boo_pro_15_inch",
     "product ID":2,
     "SKU": "mbpro_490",
@@ -30,16 +15,16 @@ Products=[
     "description": "Mac Book Pro 15 inch.",
     "qty on hand":45,
     
-},
-{ 
+}
+ARDUINO={
     "product name":"Arduino_1010_with_blue_tooth",
     "product ID":3,
     "SKU": "chip_1010",
     "price":48.00,
     "description": "Arduino microprocessor",
     "qty on hand":325,
-},
-{ 
+}
+RING={ 
     "product name":"ring Camera (wireless)",
     "product ID":4,
     "SKU": "cam_78",
@@ -47,7 +32,7 @@ Products=[
     "description": "Ring Camera. Model 78.",
     "qty on hand":98,
 },
-{ 
+SMART={
     "product name":"Smart_TV_TCL_70_inch",
     "product ID":5,
     "SKU": "smt_tv_100",
@@ -55,26 +40,17 @@ Products=[
     "description": "TCL Smart TV",
     "qty on hand":225,
 }
-]
-
-print(Products)
-#def appended_shopping_cart():
-    
-    #input("what item do you want (use the item number)? ")
-    ## Create a list of dictionaries
-students = [
-    {"name": "Alice", "age": 20, "major": "Computer Science"},
-    {"name": "Bob", "age": 22, "major": "Engineering"},
-    {"name": "Charlie", "age": 21, "major": "Mathematics"}
-]
-
-# Accessing elements
-print(students[0])  # Output: {'name': 'Alice', 'age': 20, 'major': 'Computer Science'}
-print(students[1]["name"])  # Output: Bob
-
-# Adding a new dictionary to the list
-students.append({"name": "David", "age": 19, "major": "Physics"})
-
-# Iterating through the list of dictionaries
-for student in students:
-    print(f"{student['name']} is {student['age']} years old and majors in {student['major']}.")
+Answer=input("What product do you want to see? (enter item ID#) ")
+ANSWER=int(Answer)
+if ANSWER==1:
+    print(USB)
+if ANSWER==2:
+    print(MAC)
+if ANSWER==3:
+    print(ARDUINO)
+if ANSWER==4:
+    print(RING)
+if ANSWER==5:
+    print(SMART)
+else:
+    print("try again")
