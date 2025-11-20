@@ -11,8 +11,8 @@ print ('|3.       |  Arduino1010(with blue tooth)      | $12.00')
 print ('|4.       |  Ring Camera(wireless)             | $12.00')
 print ('|5.       |  Smart TV(TLC 70 inch)             | $12.00')
 def shopingcart():
-    Answer=input("Choose a product ID from the product catalog to continue:")
-
+    Answer=input("Choose a product ID from the product catalog to continue:(choose and ID#) ")
+    shopingcart=[]
 #dictinarey with the details of a product
     USB={
         "product name":"USB Drive (128 GB)",
@@ -55,18 +55,24 @@ def shopingcart():
     "description": "TCL Smart TV",
     "qty on hand":225,
     }
-    Answer=input("What product do you want to see? (enter item ID#) ")
+    
     ANSWER=int(Answer)
     if ANSWER==1:
         print(USB)
-    if ANSWER==2:
+
+    elif ANSWER==2:
         print(MAC)
-    if ANSWER==3:
+    elif ANSWER==3:
         print(ARDUINO)
-    if ANSWER==4:
+    elif ANSWER==4:
         print(RING)
-    if ANSWER==5:
+    elif ANSWER==5:
         print(SMART)
     else:
         print("try again")
-print(shopingcart)
+    ANS=Input("do You want to add this into your cart?(Y or N)  ")
+    if ANS=Y:
+        shopingcart.append[]
+    else
+if
+shopingcart()
