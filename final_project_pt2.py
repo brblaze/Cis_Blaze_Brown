@@ -17,7 +17,7 @@ def shopingcart():
     products=[
         {
             "product name":"USB Drive (128 GB)",
-            "product ID":1,
+            "product_ID":1,
             "SKU": "usb_k981",
             "price": 12.00,
             "description": "usb 128 gb drive",
@@ -25,7 +25,7 @@ def shopingcart():
         },
         { 
             "product name":"Mac_Boo_pro_15_inch",
-            "product ID":2,
+            "product_ID":2,
             "SKU": "mbpro_490",
             "price":2900.00,
             "description": "Mac Book Pro 15 inch.",
@@ -34,7 +34,7 @@ def shopingcart():
         },
         {
             "product name":"Arduino_1010_with_blue_tooth",
-            "product ID":3,
+            "product_ID":3,
             "SKU": "chip_1010",
             "price":48.00,
             "description": "Arduino microprocessor",
@@ -42,7 +42,7 @@ def shopingcart():
         },
         { 
             "product name":"ring Camera (wireless)",
-            "product ID":4,
+            "product_ID":4,
             "SKU": "cam_78",
             "price":156.00,
             "description": "Ring Camera. Model 78.",
@@ -50,13 +50,17 @@ def shopingcart():
         },
         {
             "product name":"Smart_TV_TCL_70_inch",
-            "product ID":5,
+            "product_ID":5,
             "SKU": "smt_tv_100",
             "price":359.00,
             "description": "TCL Smart TV",
             "qty on hand":225,
         }
     ]
-    for products ID in products:
-    
+    for key,value in products[0].items():
+        #if Answer==product_ID print 
+       print(key)
+       print(value)
+shopingcart()
+
         
