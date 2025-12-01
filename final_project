@@ -71,8 +71,8 @@ def shopingcart():
     else:
         print("try again")
     ANS=Input("do You want to add this into your cart?(Y or N)  ")
-    if ANS=Y:
-        shopingcart.append[]
+    if ANS==Y:
+       shopingcart.append[]
     else
 if
 shopingcart()
