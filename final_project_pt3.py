@@ -11,13 +11,14 @@ print ('|3.       |  Arduino1010(with blue tooth)      | $12.00')
 print ('|4.       |  Ring Camera(wireless)             | $12.00')
 print ('|5.       |  Smart TV(TLC 70 inch)             | $12.00')
 def shopingcart():
-    ANSWER=input("Choose a product ID from the product catalog to continue:(choose and ID#) ")
-    shopingcart=[]
-    answer=input("Do you want to add it to your cart? (y or no) ")
-    if answer=="y":
-        if ANSWER
-        input('how many do you want')
-        shopingcart.append(ANSWER)
+    ANSWER= int(input("Choose a product ID from the product catalog to continue:(choose and ID#) "))
+    shopingcart={
+        "USB":0,
+        "MAC":0,
+        "ARDUINO":0,
+        "RING":0,
+        "SMART":0,
+    }
 
 #dictinarey with the details of a product
     products=[
@@ -63,11 +64,40 @@ def shopingcart():
             "qty on hand":225,
         }
     ]
+
     for key,value in products[0].items():
         #if Answer==product_ID print 
        print(key)
        print(value)
     print(shopingcart)
+
+    answer=input("Do you want to add it to your cart? (y or no) ")
+
+
+    if answer=='y':
+        if ANSWER==1:
+            quanity=int(input("how many do you want? (qty 1000) "))
+            shopingcart["USB"] += quanity
+        elif ANSWER==2:
+            quanity=int(input('how many do you want? (qty 45) '))
+            shopingcart["MAC"] += quanity
+        elif ANSWER==3:
+            quanity=int(input('how many do you want? (qty 325) '))
+            shopingcart["ARDUINO"] += quanity
+        elif ANSWER==4:
+           quanity=int(input('how many do you want? (qty 98) '))
+           shopingcart["RING"] += quanity
+        elif ANSWER==5:
+            quanity=int(input('how many do you want? (qty 225) '))
+            shopingcart["SMART"] += quanity
+        else:
+            print("try again")
+        print(shopingcart)
+    
 shopingcart()
+#i want to add a while loop so i can tell it done when the user is down shoping ()
+#i want to add mod 10 check ()
+#i want to add a calculator to calculate price () 
+#I want to add mailing addres inputs ()
 
         

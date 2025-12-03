@@ -12,7 +12,15 @@ print ('|4.       |  Ring Camera(wireless)             | $12.00')
 print ('|5.       |  Smart TV(TLC 70 inch)             | $12.00')
 def shopingcart():
     Answer=input("Choose a product ID from the product catalog to continue:(choose and ID#) ")
-    shopingcart=[]
+    shopingcart={
+        USB:0
+        MAC:0
+        ARDUINO:0
+        RING:0
+        SMART:0
+
+
+    }
 #dictinarey with the details of a product
     USB={
         "product name":"USB Drive (128 GB)",
