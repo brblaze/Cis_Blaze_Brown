@@ -11,8 +11,14 @@ print ('|3.       |  Arduino1010(with blue tooth)      | $12.00')
 print ('|4.       |  Ring Camera(wireless)             | $12.00')
 print ('|5.       |  Smart TV(TLC 70 inch)             | $12.00')
 def shopingcart():
-    Answer=input("Choose a product ID from the product catalog to continue:(choose and ID#) ")
+    ANSWER=input("Choose a product ID from the product catalog to continue:(choose and ID#) ")
     shopingcart=[]
+    answer=input("Do you want to add it to your cart? (y or no) ")
+    if answer=="y":
+        if ANSWER
+        input('how many do you want')
+        shopingcart.append(ANSWER)
+
 #dictinarey with the details of a product
     products=[
         {
@@ -61,6 +67,7 @@ def shopingcart():
         #if Answer==product_ID print 
        print(key)
        print(value)
+    print(shopingcart)
 shopingcart()
 
         
