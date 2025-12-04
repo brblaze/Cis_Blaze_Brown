@@ -73,7 +73,7 @@ def shopingcart():
 
     #for key,value in products.items():
         #if Answer==product_ID print 
-        done = True
+        done=True
         while done:
             ANSWER= int(input("Choose a product ID from the product catalog to continue:(choose and ID#) "))
             for items in products:
@@ -88,20 +88,50 @@ def shopingcart():
 
             if answer=='y':
                 if ANSWER==1:
-                    quanity=int(input("how many do you want? (qty 1000) "))
-                    shopingcart["USB"] += quanity
+                    DONE=True
+                    while DONE:
+                        quanity=int(input("how many do you want? (qty 1000) "))
+                        if quanity in range (1,1001):
+                            shopingcart["USB"] += quanity
+                            DONE=False
+                        else:
+                            print("invalid qautiity. Sorry we do not have that many items on hand. Please enter a valid quatity. ")
                 elif ANSWER==2:
-                    quanity=int(input('how many do you want? (qty 45) '))
-                    shopingcart["MAC"] += quanity
+                    DONE=True
+                    while DONE:
+                        quanity=int(input("how many do you want? (qty 45) "))
+                        if quanity in range (1,46):
+                            shopingcart["MAC"] += quanity
+                            DONE=False
+                        else:
+                            print("invalid qautiity. Sorry we do not have that many items on hand. Please enter a valid quatity. ")
                 elif ANSWER==3:
-                    quanity=int(input('how many do you want? (qty 325) '))
-                    shopingcart["ARDUINO"] += quanity
+                    DONE=True
+                    while DONE:
+                        quanity=int(input("how many do you want? (qty 325) "))
+                        if quanity in range (1,326):
+                            shopingcart["ARDUINO"] += quanity
+                            DONE=False
+                        else:
+                            print("invalid qautiity. Sorry we do not have that many items on hand. Please enter a valid quatity. ")
                 elif ANSWER==4:
-                    quanity=int(input('how many do you want? (qty 98) '))
-                    shopingcart["RING"] += quanity
+                    DONE=True
+                    while DONE:
+                        quanity=int(input("how many do you want? (qty 98) "))
+                        if quanity in range (1,99):
+                            shopingcart["RING"] += quanity
+                            DONE=False
+                        else:
+                            print("invalid qautiity. Sorry we do not have that many items on hand. Please enter a valid quatity. ")
                 elif ANSWER==5:
-                    quanity=int(input('how many do you want? (qty 225) '))
-                    shopingcart["SMART"] += quanity
+                    DONE=True
+                    while DONE:
+                        quanity=int(input("how many do you want? (qty 225) "))
+                        if quanity in range (1,226):
+                            shopingcart["SMART"] += quanity
+                            DONE=False
+                        else:
+                            print("invalid qautiity. Sorry we do not have that many items on hand. Please enter a valid quatity. ")
                 else:
                     print("try again")
                 print(shopingcart)
@@ -123,33 +153,38 @@ def shopingcart():
         ZIP=input("what is your ZIP code? ")
         Email=input("what is your Email? ")
         Phone=input("what is your Phone number? ")
-
-        ccNum=input('Ok. Thank you. What is your Credit Card Number?  ')
-        #this revers the string to do go to the end 
-        CCNUM=ccNum[::-1]
-        #this turns my credit number into values
-        digits = [int(num) for num in CCNUM if num.isdigit()]
-        total=0
-        #for loop
-        for i, num1 in enumerate(digits):
-            #if statments to double the even numbers
-                if i % 2 == 1:
-                    N=num1*2
-                    n=int(N)
-                    #if the numbers are to big they will be -9
-                    if n>9:
-                        n-=9
-                #this adds everything together 
-                else:
-                    n=num1
-                total+= n
-        #prints total
-    #print stantment with if and else
-        if total %10==0:
-            print("credit card number is valid")
-        else:
-            print("credit card number not valid")
-
+        print("thank you")
+        DOME=True
+        while DOME:
+            ccNum=input(' What is your Credit Card Number?  ')
+            #this revers the string to do go to the end 
+            CCNUM=ccNum[::-1]
+            #this turns my credit number into values
+            digits = [int(num) for num in CCNUM if num.isdigit()]
+            total=0
+            #for loop
+            for i, num1 in enumerate(digits):
+                #if statments to double the even numbers
+                    if i % 2 == 1:
+                        N=num1*2
+                        n=int(N)
+                        #if the numbers are to big they will be -9
+                        if n>9:
+                            n-=9
+                    #this adds everything together 
+                    else:
+                        n=num1
+                    total+= n
+            #prints total
+        #print stantment with if and else
+            if total %10==0:
+                DOME=False
+                print("credit card number is valid.")
+            else:
+                print("credit card number not valid.  Try agaon please. ")
+        
+        vaild_date=input("Enter the expiration date on your card: ")
+        cvv=input("Please enter your CVV:")
 
     
 
@@ -162,8 +197,11 @@ shopingcart()
 #i want to add mod 10 check (Done)
 #i want to add a calculator to calculate price (Done) 
 #I want to add mailing addres inputs (Done)
-#qty can exceed stock()
-#add a while loop for Mod 10 check()
-#add duplication for or a way to check out after saying no()
+#qty can exceed stock(Done)
+#add a while loop for Mod 10 check(Done)
+#Check out()
+# prompt user for CVV (DONE)
+#reccetinformation()
+
 
         
