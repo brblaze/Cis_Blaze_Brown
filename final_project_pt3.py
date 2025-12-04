@@ -6,10 +6,10 @@ print (' Itme_ID# [           Item Name              ]  item ')
 print ('                                              price')
 print ('---------------------------------------------------')
 print ('|1.       |  USB Drive (128 GB)                | $12.00')
-print ('|2.       |  Mas Book Pro (15 Inch)            | $12.00')
-print ('|3.       |  Arduino1010(with blue tooth)      | $12.00')
-print ('|4.       |  Ring Camera(wireless)             | $12.00')
-print ('|5.       |  Smart TV(TLC 70 inch)             | $12.00')
+print ('|2.       |  Mas Book Pro (15 Inch)            | $2900.00')
+print ('|3.       |  Arduino1010 (with BlueTooth)      | $48.00')
+print ('|4.       |  Ring Camera(wireless)             | $156.00')
+print ('|5.       |  Smart TV(TCL 70 inch)             | $359.00')
 def shopingcart():
     ANSWER= int(input("Choose a product ID from the product catalog to continue:(choose and ID#) "))
     shopingcart={
@@ -23,52 +23,55 @@ def shopingcart():
 #dictinarey with the details of a product
     products=[
         {
-            "product name":"USB Drive (128 GB)",
-            "product_ID":1,
-            "SKU": "usb_k981",
-            "price": 12.00,
-            "description": "usb 128 gb drive",
-            "qty on hand":1000,
+            "Product_name":"USB Drive (128 GB)",
+            "Product_ID":1,
+            "SKU_1": "usb_k981",
+            "Pice": 12.00,
+            "Description": "usb 128 gb drive",
+            "Qty_on_hand":1000,
         },
         { 
-            "product name":"Mac_Boo_pro_15_inch",
-            "product_ID":2,
-            "SKU": "mbpro_490",
-            "price":2900.00,
-            "description": "Mac Book Pro 15 inch.",
-            "qty on hand":45,
+            "pRoduct_name":"Mac_Boo_pro_15_inch",
+            "Product_ID":2,
+            "SKU_2": "mbpro_490",
+            "pRice":2900.00,
+            "dEscription": "Mac Book Pro 15 inch.",
+            "qTy_on_hand":45,
     
         },
         {
-            "product name":"Arduino_1010_with_blue_tooth",
-            "product_ID":3,
-            "SKU": "chip_1010",
-            "price":48.00,
-            "description": "Arduino microprocessor",
-            "qty on hand":325,
+            "prOduct_name":"Arduino_1010_with_blue_tooth",
+            "Product_ID":3,
+            "SKU_3": "chip_1010",
+            "prIce":48.00,
+            "deScription": "Arduino microprocessor",
+            "qtY_on_hand":325,
         },
         { 
-            "product name":"ring Camera (wireless)",
-            "product_ID":4,
-            "SKU": "cam_78",
-            "price":156.00,
-            "description": "Ring Camera. Model 78.",
-            "qty on hand":98,
+            "proDuct_name":"ring Camera (wireless)",
+            "Product_ID":4,
+            "SKU_4": "cam_78",
+            "priCe":156.00,
+            "desCription": "Ring Camera. Model 78.",
+            "qty_On_hand":98,
         },
         {
-            "product name":"Smart_TV_TCL_70_inch",
-            "product_ID":5,
-            "SKU": "smt_tv_100",
-            "price":359.00,
-            "description": "TCL Smart TV",
-            "qty on hand":225,
+            "prodUct_name":"Smart_TV_TCL_70_inch",
+            "Product_ID":5,
+            "SKU_5": "smt_tv_100",
+            "pricE":359.00,
+            "descRiption": "TCL Smart TV",
+            "qty_oN_hand":225,
         }
     ]
 
-    for key,value in products[0].items():
+    #for key,value in products.items():
         #if Answer==product_ID print 
-       print(key)
-       print(value)
+    for items in products:
+        if(items["Product_ID"]==ANSWER):
+            print(items)
+
+       #print(items)
     print(shopingcart)
 
     answer=input("Do you want to add it to your cart? (y or no) ")
