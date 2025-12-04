@@ -11,6 +11,7 @@ print ('|3.       |  Arduino1010 (with BlueTooth)      | $48.00')
 print ('|4.       |  Ring Camera(wireless)             | $156.00')
 print ('|5.       |  Smart TV(TCL 70 inch)             | $359.00')
 def shopingcart():
+    while true:
     ANSWER= int(input("Choose a product ID from the product catalog to continue:(choose and ID#) "))
     shopingcart={
         "USB":0,
@@ -25,43 +26,43 @@ def shopingcart():
         {
             "Product_name":"USB Drive (128 GB)",
             "Product_ID":1,
-            "SKU_1": "usb_k981",
-            "Pice": 12.00,
+            "SKU": "usb_k981",
+            "Price": 12.00,
             "Description": "usb 128 gb drive",
             "Qty_on_hand":1000,
         },
         { 
-            "pRoduct_name":"Mac_Boo_pro_15_inch",
+            "Product_name":"Mac_Boo_pro_15_inch",
             "Product_ID":2,
-            "SKU_2": "mbpro_490",
-            "pRice":2900.00,
-            "dEscription": "Mac Book Pro 15 inch.",
-            "qTy_on_hand":45,
+            "SKU": "mbpro_490",
+            "Price":2900.00,
+            "Description": "Mac Book Pro 15 inch.",
+            "Qty_on_hand":45,
     
         },
         {
-            "prOduct_name":"Arduino_1010_with_blue_tooth",
+            "Product_name":"Arduino_1010_with_blue_tooth",
             "Product_ID":3,
-            "SKU_3": "chip_1010",
-            "prIce":48.00,
-            "deScription": "Arduino microprocessor",
-            "qtY_on_hand":325,
+            "SKU": "chip_1010",
+            "Price":48.00,
+            "Description": "Arduino microprocessor",
+            "Qty_on_hand":325,
         },
         { 
-            "proDuct_name":"ring Camera (wireless)",
+            "Product_name":"ring Camera (wireless)",
             "Product_ID":4,
-            "SKU_4": "cam_78",
-            "priCe":156.00,
-            "desCription": "Ring Camera. Model 78.",
-            "qty_On_hand":98,
+            "SKU": "cam_78",
+            "Price":156.00,
+            "Description": "Ring Camera. Model 78.",
+            "Qty_on_hand":98,
         },
         {
-            "prodUct_name":"Smart_TV_TCL_70_inch",
+            "Product_name":"Smart_TV_TCL_70_inch",
             "Product_ID":5,
-            "SKU_5": "smt_tv_100",
-            "pricE":359.00,
-            "descRiption": "TCL Smart TV",
-            "qty_oN_hand":225,
+            "SKU": "smt_tv_100",
+            "Price":359.00,
+            "Description": "TCL Smart TV",
+            "Qty_on_hand":225,
         }
     ]
 
