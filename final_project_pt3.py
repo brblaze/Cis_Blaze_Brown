@@ -138,6 +138,8 @@ def shopingcart():
                 contue=input("Would you like to add another item? (y or n) ")
                 if contue=="n": 
                     done=False
+            else: 
+                answer =='n'
         cart_total=0
         for items in products:
             if items["Short_name"] in shopingcart and products:
@@ -160,7 +162,7 @@ def shopingcart():
             #this revers the string to do go to the end 
             CCNUM=ccNum[::-1]
             #this turns my credit number into values
-            digits = [int(num) for num in CCNUM if num.isdigit()]
+            digits = [int(num) for num in CCNUM]
             total=0
             #for loop
             for i, num1 in enumerate(digits):
@@ -202,6 +204,7 @@ shopingcart()
 #Check out()
 # prompt user for CVV (DONE)
 #reccetinformation()
+#fix credit card(DONE)
 
 
         
