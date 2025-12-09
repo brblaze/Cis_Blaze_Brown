@@ -73,19 +73,19 @@ def shopingcart():
 
     #for key,value in products.items():
         #if Answer==product_ID print 
-        done=False
-        checkout=input ("do you want to add a product to your cart? (y or n) ")
-        if checkout == "n":
-            print('ok thank you for shopping')
-        elif checkout=='y':
-            done=True
-        while done==True:
+        done=True
+        while done:
             ANSWER= int(input("Choose a product ID from the product catalog to continue:(choose and ID#) "))
             for items in products:
                 if(items["Product_ID"]==ANSWER):
                     print(items)
+
+       #print(items)
             print(shopingcart)
+
             answer=input("Do you want to add it to your cart? (y or no) ")
+
+
             if answer=='y':
                 if ANSWER==1:
                     DONE=True
@@ -136,62 +136,57 @@ def shopingcart():
                     print("try again")
                 print(shopingcart)
                 contue=input("Would you like to add another item? (y or n) ")
-                if contue == "y":
-                    print('ok')
-                    done=True
-                elif contue=="n":
-                    CHECKOUT=input('Do you want to chek out? (y or n) ')
-                    if CHECKOUT == "y":
-                        done=False
-                else:
-                    done=True
-                cart_total=0
-                for items in products:
-                    if items["Short_name"] in shopingcart and products:
-                        quanity=shopingcart[items["Short_name"]]
-                        total= quanity * items["Price"]
-                        cart_total+=total
-                print(f'your total is ${cart_total} please input the following information. ')
-                First_name=input("what is your first name? ")
-                Last_Name=input("what is your last name? ")
-                Address=input("what is your address? ")
-                city=input("what is your city name? ")
-                state=input("what is your states name? ")
-                ZIP=input("what is your ZIP code? ")
-                Email=input("what is your Email? ")
-                Phone=input("what is your Phone number? ")
-                print("thank you")
-                DOME=True
-                while DOME:
-                    ccNum=input(' What is your Credit Card Number?  ')
-                #this revers the string to do go to the end 
-                    CCNUM=ccNum[::-1]
-                #this turns my credit number into values
-                    digits = [int(num) for num in CCNUM]
-                    total=0
-                #for loop
-                    for i, num1 in enumerate(digits):
-                    #if statments to double the even numbers
-                            if i % 2 == 1:
-                                N=num1*2
-                                n=int(N)
-                            #if the numbers are to big they will be -9
-                                if n>9:
-                                    n-=9
-                        #this adds everything together 
-                            else:
-                                n=num1
-                            total+= n
+                if contue=="n": 
+                    done=False
+            else: 
+                answer =='n'
+        cart_total=0
+        for items in products:
+            if items["Short_name"] in shopingcart and products:
+                quanity=shopingcart[items["Short_name"]]
+                total= quanity * items["Price"]
+                cart_total+=total
+        print(f'your total is ${cart_total} please input the following information. ')
+        First_name=input("what is your first name? ")
+        Last_Name=input("what is your last name? ")
+        Address=input("what is your address? ")
+        city=input("what is your city name? ")
+        state=input("what is your states name? ")
+        ZIP=input("what is your ZIP code? ")
+        Email=input("what is your Email? ")
+        Phone=input("what is your Phone number? ")
+        print("thank you")
+        DOME=True
+        while DOME:
+            ccNum=input(' What is your Credit Card Number?  ')
+            #this revers the string to do go to the end 
+            CCNUM=ccNum[::-1]
+            #this turns my credit number into values
+            digits = [int(num) for num in CCNUM]
+            total=0
+            #for loop
+            for i, num1 in enumerate(digits):
+                #if statments to double the even numbers
+                    if i % 2 == 1:
+                        N=num1*2
+                        n=int(N)
+                        #if the numbers are to big they will be -9
+                        if n>9:
+                            n-=9
+                    #this adds everything together 
+                    else:
+                        n=num1
+                    total+= n
             #prints total
         #print stantment with if and else
-                    if total %10==0:
-                        DOME=False
-                        print("credit card number is valid.")
-                    else:
-                        print("credit card number not valid.  Try agaon please. ")
+            if total %10==0:
+                DOME=False
+                print("credit card number is valid.")
+            else:
+                print("credit card number not valid.  Try agaon please. ")
         
-                vaild_date=input("Enter the expiration date on your card: ")
-                cvv=input("Please enter your CVV:")
+        vaild_date=input("Enter the expiration date on your card: ")
+        cvv=input("Please enter your CVV:")
 
     
 
@@ -208,13 +203,8 @@ shopingcart()
 #add a while loop for Mod 10 check(Done)
 #Check out()
 # prompt user for CVV (DONE)
-#reccet information()
+#reccetinformation()
 #fix credit card(DONE)
-#fix bugs, IF you add letter when you put id checkS()
-
-#fix credit()
-#addbilling()
-#add calculator()
 
 #lkjfs
 
