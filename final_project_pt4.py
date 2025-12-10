@@ -219,10 +219,12 @@ shopingcart()
 #I want to add mailing addres inputs (Done)
 #qty can exceed stock(Done)
 #add a while loop for Mod 10 check(Done)
-#Check out()
+#Check out(done)
 # prompt user for CVV (DONE)
-#reccetinformation()
 #fix credit card(DONE)
-
+#reccetinformation()
+#if say no in first prompt()
+#for ""choose id not correct value bricks code()
+#error if enter credit dard number as a lettrer()
 
 #lkjfs
